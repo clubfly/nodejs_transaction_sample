@@ -37,10 +37,10 @@ schema and dataset
 ---------------------------------------------------------------------------------
 <h3>Node.js Setting</h3>
 <h4>dependencies:</h4>
-*  express
-*  jade
-*  connect
-*  mongoose
+ * express
+ * jade
+ * connect
+ * mongoose
 
 <h4>Project Structure:</h4>
  * app.js       -> main server setting
@@ -59,15 +59,25 @@ schema and dataset
  * rollback.js            -> Implement cancel data transaction
  * transaction.js         -> Implement data controller management
  * user.js                -> Url routes logic module
-
+---------------------------------------------------------------------------------
+<h3>How To Use And Run This Sample Code?</h3>
+ * 1. git clone this code.
+ * 2. cd project and npm install -l with package.json.
+ * 3. run with command -> node app.js
+ * 4. open web brower -> http://127.0.0.1:3000 and you will see login page.
+ * 5. login with owner and password you configured.
+ * 6. try ~~~~~ .
+ * 7. recovery data :
+   * 1. run with command -> node recovery_committed.js
+   * 2. run with command -> node recovery_pendding.js
+   * 3. checkout you data in mongodb
 ---------------------------------------------------------------------------------
 <h3>Notice List:</h3>
-  * a. while recovering data, please stop trade_transaction.js first.
-  * b. if you wanna recover data, do command onderline:
-    * 1. cd  your project_path/routes/
-    * 2. use command -> node recovery_committed.js
-    * 3. use command -> node recovery_pendding.js
-    * 4. checkout recovering data in mongodb.
-  * c. mongod instance has journaling enabled to ensure that your data is always in a recoverable state
+ * a. while recovering data, please stop trade_transaction.js first.
+ * b. if you wanna recover data, do command onderline:
+   * 1. cd  your project_path/routes/
+   * 2. use command -> node recovery_committed.js
+   * 3. use command -> node recovery_pendding.js
+   * 4. checkout recovering data in mongodb.
+ * c. mongod instance has journaling enabled to ensure that your data is always in a recoverable state
      in the event of an unclean mongod shutdown.
-      
