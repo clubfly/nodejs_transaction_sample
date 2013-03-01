@@ -70,7 +70,7 @@ schema and dataset
  * 7. recovery data :
    * 1. run with command -> node recovery_committed.js
    * 2. run with command -> node recovery_pendding.js
-   * 3. checkout you data in mongodb
+   * 3. checkout you data in mongodbi.
 ---------------------------------------------------------------------------------
 <h3>Notice List:</h3>
  * a. while recovering data, please stop trade_transaction.js first.
