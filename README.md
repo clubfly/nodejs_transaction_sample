@@ -77,7 +77,6 @@ schema and dataset
  * b. if you wanna recover data, do command onderline:
    * 1. cd  your project_path/routes/
    * 2. use command -> node recovery_committed.js
-   * 3. use command -> node recovery_pendding.js
-   * 4. checkout recovering data in mongodb.
+   * 3. use command -> node recovery_pendding.js and checkout data in your mongodb.
  * c. mongod instance has journaling enabled to ensure that your data is always in a recoverable state
      in the event of an unclean mongod shutdown.
