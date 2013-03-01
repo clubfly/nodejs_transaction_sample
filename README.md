@@ -66,10 +66,10 @@ schema and dataset
  * 3. run with command -> node app.js
  * 4. open web brower -> http://127.0.0.1:3000 and you will see login page.
  * 5. login with owner and password you configured.
- * 6. try ~~~~~ .
+ * 6. try ~~~~~
  * 7. recovery data :
    * 1. run with command -> node recovery_committed.js
-   * 2. run with command -> node recovery_pendding.js and checkout you data in mongodb.
+   * 2. run with command -> node recovery_pendding.js and check you data in mongodb.
 ---------------------------------------------------------------------------------
 <h3>Notice List:</h3>
  * a. while recovering data, please stop trade_transaction.js first.
