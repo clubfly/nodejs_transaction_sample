@@ -1,9 +1,9 @@
-Project : Transaction With Mongodb And Node.js For Sample Code
+# Project : Transaction With Mongodb And Node.js For Sample Code
 
-Mongodb Document Schema
-
+<h3>Mongodb Document Schema</h3>
 collection : accounts
 schema and dataset:
+```json
 {
   "acct_number" : "AMI_20130225_A", 
   "balance" : 0, 
@@ -22,19 +22,20 @@ schema and dataset:
   "password" : "B",
   "peddingtransaction" : [ ]
 }
-
+```
 collection : transactions
 schema and dataset
+```json
 { "App" : "A1", 
   "DateTime" : ISODate("2013-02-26T06:10:14.863Z"), 
   "From" : "AMI_20130225_B", 
   "PeddingFlag" : "pendding", 
   "To" : "AMI_20130225_A", 
-  "balance" : 40 
+  "balance" : 40
 }
+```
 ---------------------------------------------------------------------------------
-Node.js Setting
-
+<h3>Node.js Setting</h3>
 dependencies:
   express
   jade
@@ -58,14 +59,15 @@ Module Lists: (Path:routes/)
   rollback.js            -> Implement cancel data transaction
   transaction.js         -> Implement data controller management
   user.js                -> Url routes logic module
+
 ---------------------------------------------------------------------------------
-Notice List:
-  a. while recovering data, please stop trade_transaction.js first.
-  b. if you wanna recover data, do command onderline:
-     1. cd  your project_path/routes/
-     2. use command -> node recovery_committed.js
-     3. use command -> node recovery_pendding.js
-     4. checkout recovering data in mongodb.
-  c. mongod instance has journaling enabled to ensure that your data is always in a recoverable state
+<h3>Notice List:</h3>
+  * a. while recovering data, please stop trade_transaction.js first.
+  * b. if you wanna recover data, do command onderline:
+    * 1. cd  your project_path/routes/
+    * 2. use command -> node recovery_committed.js
+    * 3. use command -> node recovery_pendding.js
+    * 4. checkout recovering data in mongodb.
+  * c. mongod instance has journaling enabled to ensure that your data is always in a recoverable state
      in the event of an unclean mongod shutdown.
       
