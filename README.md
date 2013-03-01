@@ -34,7 +34,6 @@ schema and dataset
   "balance" : 40
 }
 ```
----------------------------------------------------------------------------------
 <h3>Node.js Setting</h3>
 <h4>dependencies:</h4>
  * express
@@ -59,7 +58,6 @@ schema and dataset
  * rollback.js            -> Implement cancel data transaction
  * transaction.js         -> Implement data controller management
  * user.js                -> Url routes logic module
----------------------------------------------------------------------------------
 <h3>How To Use And Run This Sample Code?</h3>
  * 1. git clone this code.
  * 2. cd project and npm install -l with package.json.
@@ -70,7 +68,6 @@ schema and dataset
  * 7. recovery data :
    * 1. run with command -> node recovery_committed.js
    * 2. run with command -> node recovery_pendding.js and check you data in mongodb.
----------------------------------------------------------------------------------
 <h3>Notice List:</h3>
  * a. while recovering data, please stop trade_transaction.js first.
  * b. if you wanna recover data, do command onderline:
