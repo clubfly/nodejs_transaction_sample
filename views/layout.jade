@@ -1,0 +1,28 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript',src='http://code.jquery.com/jquery-1.9.0.min.js')
+    script(type='text/javascript')
+      $(function(){
+        $(".rollback").click(function(){
+          var tradeID = $(this).attr("id");
+          ajaxSend(tradeID,"A1");
+        });
+      });
+      var ajaxSend = function(id,app){
+        $.ajax({
+          url : "/cancel_trade",
+          method : "post",
+          data : {
+            _id : id,
+            App : app
+          },
+        }).done(function(res){
+          alert("Your Transaction Is Applied!");
+          top.location.href="/user";
+        });  
+      }
+  body
+    block content

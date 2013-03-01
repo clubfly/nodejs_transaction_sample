@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  form(action="/login",method="post")
+    span Account :
+    input(id = "account",type = "text",value = "",name = "account")
+    br
+    span Password :
+    input(id = "password",type = "password",value = "",name = "password")
+    br
+    input(id = "submit",type = "submit",value = "Login",name = "submit")

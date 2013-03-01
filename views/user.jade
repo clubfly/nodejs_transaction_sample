@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  ul
+    li
+      input(type="button",value="Logout",onclick="top.location.href='/logout';")
+    li 
+      span User : 
+        span #{owner}
+    li 
+      span acct_no : 
+        span #{acct_number}
+    li 
+      span balance (Origin balance, Transfered balance): 
+        span #{balance} , #{transfered_balance}
+    li
+      form(action="/transaction",method="post")
+        span Transction To User :
+          select(name="Account")
+            option(value="#{tradelist}") #{tradelist}
+          br
+        span Transaction Balance :
+          select(name="balance")
+            option(value="40") 40
+          br
+        input(id = "submit",type = "submit",value = "Apply",name = "submit")
+    li 
+      ul
+        for val,key in transactionlist
+          li 
+              span to : #{val["To"]}
+              br
+              span trade : #{val["balance"]}
+              br
+              span status : #{val["PeddingFlag"]}
+                input(type="button",value="Cancel",class="rollback",id="#{val["_id"]}") 

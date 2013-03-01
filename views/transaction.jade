@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  title #{title}
+  script(type='text/javascript')
+    alert("#{message}");
+    top.location.href="/user?upd=Y";
