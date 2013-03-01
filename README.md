@@ -1,4 +1,4 @@
-# Project : Transaction With Mongodb And Node.js For Sample Code
+#Transaction With Mongodb And Node.js For Sample Code
 
 <h3>Mongodb Document Schema</h3>
 collection : accounts
@@ -36,29 +36,29 @@ schema and dataset
 ```
 ---------------------------------------------------------------------------------
 <h3>Node.js Setting</h3>
-dependencies:
-  express
-  jade
-  connect
-  mongoose
+<h4>dependencies:</h4>
+*  express
+*  jade
+*  connect
+*  mongoose
 
-Project Structure:
-  app.js       -> main server setting
-  package.json -> all package setting
-  public (dir) -> all static file here
-  routes (dir) -> all code logic and models here
-  views  (dir) -> all templates file here
+<h4>Project Structure:</h4>
+ * app.js       -> main server setting
+ * package.json -> all package setting
+ * public (dir) -> all static file here
+ * routes (dir) -> all code logic and models here
+ * views  (dir) -> all templates file here
 
-Module Lists: (Path:routes/)
-  index.js               -> Show login page
-  Mongodb_Account.js     -> Account ORM DataSet For Mongodb Document Schema
-  Mongodb_Transaction.js -> Transaction ORM DataSet For Mongodb Document Schema
-  trade_procedures.js    -> Implement data transaction (need setting system crontab)
-  recovery_committed.js  -> Implement data recovery
-  recovery_pendding.js   -> Implement data recovery
-  rollback.js            -> Implement cancel data transaction
-  transaction.js         -> Implement data controller management
-  user.js                -> Url routes logic module
+<h4>Module Lists: (Path:routes/)</h4>
+ * index.js               -> Show login page
+ * Mongodb_Account.js     -> Account ORM DataSet For Mongodb Document Schema
+ * Mongodb_Transaction.js -> Transaction ORM DataSet For Mongodb Document Schema
+ * trade_procedures.js    -> Implement data transaction (need setting system crontab)
+ * recovery_committed.js  -> Implement data recovery
+ * recovery_pendding.js   -> Implement data recovery
+ * rollback.js            -> Implement cancel data transaction
+ * transaction.js         -> Implement data controller management
+ * user.js                -> Url routes logic module
 
 ---------------------------------------------------------------------------------
 <h3>Notice List:</h3>
